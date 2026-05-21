@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Costos</title>
+</head>
+<body>
+    <header>
+        <div>
+            <span>🌐 SoftEstimate</span>
+        </div>
+        <div>
+            <nav>Inicio</nav>
+            <nav>Acerca de</nav>
+            <nav>Contacto</nav>
+            <button type="button">Iniciar sesión</button>
+        </div>
+    </header>
+    <main>
+        <section>
+            <div>
+                <p class="stepper-label" id="step-label">Paso 1 de 5: Selección de Plataforma</p>
+
+                <!-- El stepper -->
+                <div class="stepper" id="stepper">
+                <div class="step">
+                    <div class="step-circle active" id="circle-1"></div>
+                    <div class="step-line" id="line-1"></div>
+                </div>
+                <div class="step">
+                    <div class="step-circle" id="circle-2"></div>
+                    <div class="step-line" id="line-2"></div>
+                </div>
+                <!-- ...repite para cada paso... -->
+                <div class="step">
+                    <div class="step-circle" id="circle-5"></div>
+                    <!-- el último paso NO tiene línea -->
+                </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div>
+            <h1>¿Qué plataforma necesitas?</h1>
+            <div>
+            <div>
+                <input type="checkbox" id="plataforma1" name="iOS" value="plataforma1">
+                <img src="" alt="">
+                <h2>iOS</h2>
+                <small>Aplicaciones para iPhone y iPad</small>
+            </div>
+            <div>
+                <input type="checkbox" id="plataforma2" name="Android" value="plataforma2">
+                <img src="" alt="">
+                <h2>Android</h2>
+                <small>Aplicaciones para dispositivos Android</small>
+            </div>
+            <div>
+                <input type="checkbox" id="plataforma3" name="Web" value="plataforma3">
+                <img src="" alt="">
+                <h2>Web</h2>
+                <small>Aplicaciones y sitios web accesibles</small>
+            </div>
+        </section>
+        <section>
+            <div>
+                <button type="button">Anterior</button>
+            </div>
+            <div>
+                <button type="button">Siguiente</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
