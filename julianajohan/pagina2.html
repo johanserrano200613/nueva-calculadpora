@@ -3,75 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Costos</title>
+    <title>Calculadora Costos - Paso 1</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
-    <header>
-        <div>
-            <span>🌐 SoftEstimate</span>
+<body class="body-pag2">
+    <header class="header-pag2">
+        <div class="logo-pag2">
+            <span class="logo-icon2">S</span>
+            <span class="logo-text2">SoftEstimate</span>
         </div>
-        <div>
-            <nav>Inicio</nav>
-            <nav>Acerca de</nav>
-            <nav>Contacto</nav>
-            <button type="button">Iniciar sesión</button>
+        <div class="nav-pag2">
+            <a href="" class="nav-link2">Inicio</a>
+            <a href="" class="nav-link2">Acerca de</a>
+            <a href="" class="nav-link2">Contacto</a>
+            <button type="button" class="btn-login">Iniciar sesión</button>
         </div>
     </header>
-    <main>
-        <section>
-            <div>
+    <main class="main-pag2">
+        <div class="form-card">
+ 
+            <div class="stepper-wrapper">
                 <p class="stepper-label" id="step-label">Paso 1 de 5: Selección de Plataforma</p>
-
-                <!-- El stepper -->
                 <div class="stepper" id="stepper">
-                <div class="step">
-                    <div class="step-circle active" id="circle-1"></div>
-                    <div class="step-line" id="line-1"></div>
+                    <div class="step">
+                        <div class="step-circle active" id="circle-1"></div>
+                        <div class="step-line active" id="line-1"></div>
+                    </div>
+                    <div class="step">
+                        <div class="step-circle" id="circle-2"></div>
+                        <div class="step-line" id="line-2"></div>
+                    </div>
+                    <div class="step">
+                        <div class="step-circle" id="circle-3"></div>
+                        <div class="step-line" id="line-3"></div>
+                    </div>
+                    <div class="step">
+                        <div class="step-circle" id="circle-4"></div>
+                        <div class="step-line" id="line-4"></div>
+                    </div>
+                    <div class="step">
+                        <div class="step-circle" id="circle-5"></div>
+                    </div>
                 </div>
-                <div class="step">
-                    <div class="step-circle" id="circle-2"></div>
-                    <div class="step-line" id="line-2"></div>
+            </div>
+ 
+            <h1 class="question-title">¿Qué plataforma necesitas?</h1>
+ 
+            <div class="cards-row">
+                <div class="platform-card selected-card">
+                    <input type="checkbox" id="plataforma1" name="iOS" value="plataforma1" class="card-check">
+                    <span class="check-badge"><i class="fa-solid fa-check"></i></span>
+                    <i class="fa-brands fa-apple card-icon"></i>
+                    <h2 class="card-title">iOS</h2>
+                    <small class="card-desc">Aplicaciones para iPhone y iPad.</small>
                 </div>
-                <!-- ...repite para cada paso... -->
-                <div class="step">
-                    <div class="step-circle" id="circle-5"></div>
-                    <!-- el último paso NO tiene línea -->
+                <div class="platform-card">
+                    <input type="checkbox" id="plataforma2" name="Android" value="plataforma2" class="card-check">
+                    <i class="fa-brands fa-android card-icon"></i>
+                    <h2 class="card-title">Android</h2>
+                    <small class="card-desc">Aplicaciones para dispositivos Android.</small>
                 </div>
+                <div class="platform-card">
+                    <input type="checkbox" id="plataforma3" name="Web" value="plataforma3" class="card-check">
+                    <i class="fa-solid fa-globe card-icon"></i>
+                    <h2 class="card-title">Web</h2>
+                    <small class="card-desc">Aplicaciones y sitios web accesibles.</small>
                 </div>
             </div>
-        </section>
-        <section>
-            <div>
-            <h1>¿Qué plataforma necesitas?</h1>
-            <div>
-            <div>
-                <input type="checkbox" id="plataforma1" name="iOS" value="plataforma1">
-                <img src="" alt="">
-                <h2>iOS</h2>
-                <small>Aplicaciones para iPhone y iPad</small>
+ 
+            <div class="btn-row">
+                <button type="button" class="btn-prev">Anterior</button>
+                <button type="button" class="btn-next">Siguiente</button>
             </div>
-            <div>
-                <input type="checkbox" id="plataforma2" name="Android" value="plataforma2">
-                <img src="" alt="">
-                <h2>Android</h2>
-                <small>Aplicaciones para dispositivos Android</small>
-            </div>
-            <div>
-                <input type="checkbox" id="plataforma3" name="Web" value="plataforma3">
-                <img src="" alt="">
-                <h2>Web</h2>
-                <small>Aplicaciones y sitios web accesibles</small>
-            </div>
-        </section>
-        <section>
-            <div>
-                <button type="button">Anterior</button>
-            </div>
-            <div>
-                <button type="button">Siguiente</button>
-            </div>
-        </section>
+ 
+        </div>
     </main>
 </body>
 </html>
