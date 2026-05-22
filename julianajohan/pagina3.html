@@ -3,94 +3,116 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Costos</title>
+    <title>Calculadora Costos - Reporte</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
-<body>
-    <header>
-        <div>
-            <span>🌐 CostEstimator</span>
+<body class="body-pag3">
+    <header class="header-pag3">
+        <div class="logo-pag3">
+            <i class="fa-solid fa-chart-bar logo-icon3"></i>
+            <span class="logo-text3">CostEstimator</span>
         </div>
-        <div>
-            <nav>Inicio</nav>
-            <nav>Estimador</nav>
-            <nav>Reportes</nav>
-            <nav>Contactos</nav>
+        <div class="nav-pag3">
+            <a href="pagina1.html" class="nav-link3">Inicio</a>
+            <a href="#" class="nav-link3">Estimador</a>
+            <a href="pagina3.html" class="nav-link3">Reportes</a>
+            <a href="pagina4.html" class="nav-link3">Contactos</a>
         </div>
     </header>
-    <main>
-        <section>
+    <main class="main-pag3">
+        <section class="title-section3">
             <div>
-            <h1>Desglose de Costos de desarrollo de Software Simulado</h1>
+                <h1 class="main-title3">Desglose de Costos de desarrollo de Software Simulado</h1>
+                <hr class="title-divider3">
             </div>
         </section>
-        <section>
-            <div>
+        <section class="cost-section3">
+            <div class="total-cost3">
                 <h2>Costo Total Estimado: $125,000</h2>
             </div>
-            <div>
-                <h3>Diseño: $20,000 (16%)</h3>
-            </div>
-            <div>
-                <h3>Backend Dev: $40,000 (32%)</h3>
-            </div>
-            <div>
-                <h3>Frontend Dev: $45,000 (36%)</h3>
-            </div>
-            <div>
-                <h3>Testing & QA: $20,000 (16%)</h3>
-            </div>
-        </section>
-        <section>
-            <div>
-                <h2>Desglose Detallado de Costos</h2>
-            </div>
-            <div>
-                <table>
-                        <tr>
-                            <th>Categoria</th>
-                            <th>Descripcion</th>
-                            <th>Horas</th>
-                            <th>Precio</th>
-                        </tr>
-                   
-                    
-                        <tr>
-                            <td>Diseño</td>
-                            <td>UX/UI, Wireframing, Prototipo</td>
-                            <td>160</td>
-                            <td>$20,000</td>
-                        </tr>
-                        <tr>
-                            <td>Frontend</td>
-                            <td>React, HTML/CSS, Responsive</td>
-                            <td>360</td>
-                            <td>$45,000</td>
-                        </tr>
-                        <tr>
-                            <td>Backend</td>
-                            <td>Node.js, Database,API</td>
-                            <td>320</td>
-                            <td>$40,000</td>
-                        </tr>
-                        <tr>
-                            <td>Testing & QA</td>
-                            <td>Manual & Testeo Automatico</td>
-                            <td>160</td>
-                            <td>$20,000</td>
-                        </tr>
-                    </table>
-                </div>
-                <div>
-                        <button type="button">descargar reporte(PDF)</button>
+            <div class="cost-cards-grid3">
+                <div class="cost-card3 card-design3">
+                    <h3 class="card-heading3">Diseño: $20,000 (16%)</h3>
+                    <div class="progress-track3">
+                        <div class="progress-fill3" style="width: 16%"><span>16%</span></div>
                     </div>
+                </div>
+                <div class="cost-card3 card-frontend3">
+                    <h3 class="card-heading3">Frontend Dev: $45,000 (36%)</h3>
+                    <div class="progress-track3">
+                        <div class="progress-fill3" style="width: 36%"><span>36%</span></div>
+                    </div>
+                </div>
+                <div class="cost-card3 card-backend3">
+                    <h3 class="card-heading3">Backend Dev: $40,000 (32%)</h3>
+                    <div class="progress-track3">
+                        <div class="progress-fill3" style="width: 32%"><span>32%</span></div>
+                    </div>
+                </div>
+                <div class="cost-card3 card-testing3">
+                    <h3 class="card-heading3">Testing & QA: $20,000 (16%)</h3>
+                    <div class="progress-track3">
+                        <div class="progress-fill3" style="width: 16%"><span>16%</span></div>
+                    </div>
+                </div>
+            </div>
         </section>
-        <section>
+        <section class="table-section3">
+            <div>
+                <h2 class="table-title3">Desglose Detallado de Costos</h2>
+            </div>
+            <div class="table-wrap3">
+                <table class="cost-table3">
+                    <tr>
+                        <th>Categoria</th>
+                        <th>Descripcion</th>
+                        <th>Horas</th>
+                        <th>Precio</th>
+                    </tr>
+                    <tr>
+                        <td>Diseño</td>
+                        <td>UX/UI, Wireframing, Prototipo</td>
+                        <td>160</td>
+                        <td>$20,000</td>
+                    </tr>
+                    <tr>
+                        <td>Frontend</td>
+                        <td>React, HTML/CSS, Responsive</td>
+                        <td>360</td>
+                        <td>$45,000</td>
+                    </tr>
+                    <tr>
+                        <td>Backend</td>
+                        <td>Node.js, Database, API</td>
+                        <td>320</td>
+                        <td>$40,000</td>
+                    </tr>
+                    <tr>
+                        <td>Testing & QA</td>
+                        <td>Manual & Testeo Automatico</td>
+                        <td>160</td>
+                        <td>$20,000</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="download-wrap3" style="display: flex; gap: 10px; justify-content: center; margin-top: 20px;">
+                <button type="button" class="btn-download3" onclick="window.location.href='pagina2.html'">
+                    Anterior
+                </button>
+                <button type="button" class="btn-download3">
+                    <i class="fa-solid fa-file-arrow-down"></i>
+                    Descargar Reporte (PDF)
+                </button>
+                <button type="button" class="btn-download3" onclick="window.location.href='pagina4.html'">
+                    Siguiente
+                </button>
+            </div>
+        </section>
+        <section class="footer-pag3">
             <p>&copy; 2024 Calculadora Costos. Todos los derechos reservados.</p>
         </section>
-        
-
     </main>
-     
 </body>
 </html>

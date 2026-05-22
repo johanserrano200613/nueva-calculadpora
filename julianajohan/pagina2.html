@@ -14,69 +14,54 @@
             <span class="logo-text2">SoftEstimate</span>
         </div>
         <div class="nav-pag2">
-            <a href="" class="nav-link2">Inicio</a>
-            <a href="" class="nav-link2">Acerca de</a>
-            <a href="" class="nav-link2">Contacto</a>
+            <a href="pagina1.html" class="nav-link2">Inicio</a>
+            <a href="#" class="nav-link2">Acerca de</a>
+            <a href="#" class="nav-link2">Contacto</a>
             <button type="button" class="btn-login">Iniciar sesión</button>
         </div>
     </header>
+
     <main class="main-pag2">
         <div class="form-card">
- 
             <div class="stepper-wrapper">
                 <p class="stepper-label" id="step-label">Paso 1 de 5: Selección de Plataforma</p>
                 <div class="stepper" id="stepper">
-                    <div class="step">
-                        <div class="step-circle active" id="circle-1"></div>
-                        <div class="step-line active" id="line-1"></div>
-                    </div>
-                    <div class="step">
-                        <div class="step-circle" id="circle-2"></div>
-                        <div class="step-line" id="line-2"></div>
-                    </div>
-                    <div class="step">
-                        <div class="step-circle" id="circle-3"></div>
-                        <div class="step-line" id="line-3"></div>
-                    </div>
-                    <div class="step">
-                        <div class="step-circle" id="circle-4"></div>
-                        <div class="step-line" id="line-4"></div>
-                    </div>
-                    <div class="step">
-                        <div class="step-circle" id="circle-5"></div>
-                    </div>
+                    <div class="step"><div class="step-circle active" id="circle-1"></div><div class="step-line active" id="line-1"></div></div>
+                    <div class="step"><div class="step-circle" id="circle-2"></div><div class="step-line" id="line-2"></div></div>
+                    <div class="step"><div class="step-circle" id="circle-3"></div><div class="step-line" id="line-3"></div></div>
+                    <div class="step"><div class="step-circle" id="circle-4"></div><div class="step-line" id="line-4"></div></div>
+                    <div class="step"><div class="step-circle" id="circle-5"></div></div>
                 </div>
             </div>
- 
+
             <h1 class="question-title">¿Qué plataforma necesitas?</h1>
- 
+
             <div class="cards-row">
                 <div class="platform-card selected-card">
-                    <input type="checkbox" id="plataforma1" name="iOS" value="plataforma1" class="card-check">
+                    <input type="checkbox" id="plataforma1" class="card-check">
                     <span class="check-badge"><i class="fa-solid fa-check"></i></span>
                     <i class="fa-brands fa-apple card-icon"></i>
                     <h2 class="card-title">iOS</h2>
                     <small class="card-desc">Aplicaciones para iPhone y iPad.</small>
                 </div>
                 <div class="platform-card">
-                    <input type="checkbox" id="plataforma2" name="Android" value="plataforma2" class="card-check">
+                    <input type="checkbox" id="plataforma2" class="card-check">
                     <i class="fa-brands fa-android card-icon"></i>
                     <h2 class="card-title">Android</h2>
                     <small class="card-desc">Aplicaciones para dispositivos Android.</small>
                 </div>
                 <div class="platform-card">
-                    <input type="checkbox" id="plataforma3" name="Web" value="plataforma3" class="card-check">
+                    <input type="checkbox" id="plataforma3" class="card-check">
                     <i class="fa-solid fa-globe card-icon"></i>
                     <h2 class="card-title">Web</h2>
                     <small class="card-desc">Aplicaciones y sitios web accesibles.</small>
                 </div>
             </div>
- 
-            <div class="btn-row">
-                <button type="button" class="btn-prev">Anterior</button>
-                <button type="button" class="btn-next">Siguiente</button>
+
+            <div class="btn-row" style="display: flex; justify-content: space-between; margin-top: 30px;">
+                <button type="button" class="btn-prev" onclick="window.location.href='pagina1.html'">Anterior</button>
+                <button type="button" class="btn-next" onclick="window.location.href='pagina3.html'">Siguiente</button>
             </div>
- 
         </div>
     </main>
 </body>
